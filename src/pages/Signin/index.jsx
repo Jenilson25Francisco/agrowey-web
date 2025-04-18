@@ -11,13 +11,13 @@ export function Signin() {
         <h1>Faça Login</h1>
         <div>
           <Input
-            placeholder="digite o seu email"
+            placeholder="Digite o seu email"
             type="email"
             icon={<Mail color="#6c757d" size={20} />}
           />
 
           <Input
-            placeholder="digite a sua senha"
+            placeholder="Digite a sua senha"
             type="password"
             icon={<Lock color="#6c757d" size={20} />}
           />
@@ -25,7 +25,7 @@ export function Signin() {
 
         <Button>Entrar</Button>
         <p>
-          Não tem uma conta? <Link to="/signup">Crie uma agora!</Link>
+          Não tem uma conta? <Link to="/signup">Regista-se agora!</Link>
         </p>
       </SigninContainer>
 

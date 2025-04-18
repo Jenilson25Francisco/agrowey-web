@@ -12,6 +12,7 @@ export const Container = styled.div`
     object-fit: cover;
     object-position: center;
     border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
   }
 
 `
@@ -23,6 +24,12 @@ export const SigninContainer = styled.form`
   flex-direction: column;
   width: 100%;
 
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+  }
+
   > div {
     display: flex;
     flex-direction: column;
@@ -32,6 +39,9 @@ export const SigninContainer = styled.form`
 
   p {
     margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
   }
-
 `
