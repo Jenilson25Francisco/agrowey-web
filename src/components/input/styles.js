@@ -9,7 +9,7 @@ export const InputContainer = styled.div`
 export const InputContent = styled.input`
   width: 25.25rem;
   height: 2rem;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 0.625rem;
   border-radius: 0.625rem;
   border: none;
   background-color: #F0FFF0;
@@ -19,7 +19,7 @@ export const InputContent = styled.input`
   transition: all 0.2s ease-in-out;
 
   &:focus {
-    border: none;
+    border: 1px solid rgb(27, 94, 32);
     outline: none;
     transition: all 0.2s ease-in-out;
   }

@@ -2,6 +2,10 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
 
+  /* :root {
+    font-size: 62.5%;
+  } */
+
   * {
     margin: 0;
     padding: 0;
@@ -29,12 +33,12 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    background: #7CFC00;
+    background:rgb(28, 34, 21);
   }
 
   ::-webkit-scrollbar-thumb {
     border-radius: 2rem;
-    background: #4F7942;
+    background:rgb(26, 46, 20);
   }
 
 `

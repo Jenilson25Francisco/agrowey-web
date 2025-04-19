@@ -1,18 +1,30 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   width: 100%;
   height: 100dvh;
 
   img {
-    width: 48.75rem;
-    height: 100dvh;
-    object-fit: cover;
-    object-position: center;
-    border-top-left-radius: 2.5rem;
-    border-bottom-left-radius: 2.5rem;
+    display: none;
+    /* border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem; */
+  }
+
+  @media (min-width: 768px) {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    img {
+      display: inline;
+      width: 48.75rem;
+      height: 100dvh;
+      object-fit: cover;
+      object-position: center;
+    }
+
   }
 
 `
@@ -22,12 +34,14 @@ export const SigninContainer = styled.form`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  padding: 0 5rem;
+  /* width: 100%; */
+  height: 100vh;
+  max-width: 25.25rem;
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    text-align: left;
   }
 
   > div {
@@ -43,5 +57,20 @@ export const SigninContainer = styled.form`
     align-items: center;
     gap: 0.5rem;
     font-size: 0.75rem;
+  }
+
+  @media (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 48.75rem;
+    height: 100vh;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
   }
 `

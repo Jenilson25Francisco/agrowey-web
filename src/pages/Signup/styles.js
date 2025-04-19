@@ -1,20 +1,29 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+ height: 100dvh;
+
+img {
+  display: none;
+  /* border-top-left-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem; */
+}
+
+@media (min-width: 768px) {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  height: 100dvh;
 
   img {
+    display: inline;
     width: 48.75rem;
     height: 100dvh;
     object-fit: cover;
     object-position: center;
-    border-top-left-radius: 2.5rem;
-    border-bottom-left-radius: 2.5rem;
   }
-
+}
 `
 
 export const SigninContainer = styled.form`
